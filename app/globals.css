@@ -1342,3 +1342,8 @@ button:active:not(:disabled) { transform: translateY(1px); }
     text-align: center;
   }
 }
+
+/* Hide the "Powered by Netlify" badge */
+#nl-badge-frame {
+  display: none !important;
+}
