@@ -1,0 +1,6 @@
+[build]
+  # Use Corepack so the pnpm version pinned in package.json ("packageManager")
+  # is available even when pnpm isn't preinstalled, and install dependencies
+  # if the install stage hasn't already done so.
+  command = "export COREPACK_ENABLE_DOWNLOAD_PROMPT=0; [ -d node_modules ] || corepack pnpm install --frozen-lockfile && corepack pnpm run build"
+  publish = ".next"
